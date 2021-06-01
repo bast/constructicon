@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="https://constructicon.github.io/russian/img/favicon.ico">
+
+    <title>Constructicon</title>
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/constructicon/russian/main/content/logo/constructicon-round.png" />
+    
+
+    
+      <meta name="description" content="Description of the Constructicon.
+" />
+      <meta name="twitter:description" content="Description of the Constructicon.
+" />
+    
+
+    
+      <meta name="twitter:title" content="Constructicon" />
+    
+
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"
+            integrity="sha256-ngFW3UnAN0Tnm76mDuu7uUtYEcG3G5H1+zioJw3t+68="
+            crossorigin="anonymous"></script>
+
+    <!-- https://vue-treeselect.js.org/ -->
+    <script src="https://cdn.jsdelivr.net/npm/@riophae/vue-treeselect@^0.4.0/dist/vue-treeselect.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@riophae/vue-treeselect@^0.4.0/dist/vue-treeselect.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@3.14.0/dist/js-yaml.min.js"
+            integrity="sha256-8mtDTinb8+d2bC/9KhCJoCRBEylWUIV/3YEt5cSUvRk="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.19/lodash.min.js"
+            integrity="sha256-Jvh9+A4HNbbWsWl1Dw7kAzNsU3y8elGIjLnUSUNMtLg="
+            crossorigin="anonymous"></script>
+
+    <!-- https://github.com/bvaughn/js-search -->
+    <script src="https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js"
+            integrity="sha256-LD9UsSATk+xTzAbk8nD2gA2bjHKvetXtCMDAFkM2K5Q="
+            crossorigin="anonymous"></script>
+
+    <link href="https://constructicon.github.io/russian/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- navigation -->
+      <div class="row top-buffer">
+        <div class="col-md-3">
+          <figure class="figure">
+            <img src="https://constructicon.github.io/russian/processed_images/a4325580a336ab5e00.png"
+                 class="figure-img img-fluid rounded" alt="Constructicon logo">
+          </figure>
+        </div>
+        <div class="col-md-9">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d9f2ff;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://constructicon.github.io/russian/">Browse</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://constructicon.github.io/russian/daily/">Daily dose</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://constructicon.github.io/russian/advanced-search/">Advanced search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://constructicon.github.io/russian/instructions-english/">Instructions (English)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://constructicon.github.io/russian/instructions-russian/">Instructions (Russian)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://constructicon.github.io/russian/about/">About</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- end navigation -->
+
+      <div class="top-buffer">
+        
+  <ul>
+    
+      <li>
+        <a href="https://constructicon.github.io/russian/instructions-english/#instructions">Instructions</a>
+        
+          <ul>
+            
+              <li>
+                <a href="https://constructicon.github.io/russian/instructions-english/#1-explanation-of-tabs">1. Explanation of tabs</a>
+                
+                  <ul>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#browse">Browse</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#daily-dose">Daily Dose</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#advanced-search">Advanced Search</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#instructions-english">Instructions (English)</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#instructions-russian">Instructions (Russian)</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#about">About</a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="https://constructicon.github.io/russian/instructions-english/#2-abbreviations-and-symbols">2. Abbreviations and symbols</a>
+                
+              </li>
+            
+              <li>
+                <a href="https://constructicon.github.io/russian/instructions-english/#3-explanation-of-conventions">3. Explanation of conventions</a>
+                
+              </li>
+            
+              <li>
+                <a href="https://constructicon.github.io/russian/instructions-english/#4-explanation-of-terms">4. Explanation of terms</a>
+                
+                  <ul>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#4-1-stylistic-terms-usage-labels">4.1. Stylistic terms (Usage labels)</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#4-2-morphological-terms">4.2. Morphological terms</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#4-3-syntactic-terms">4.3. Syntactic terms</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#4-3-1-syntactic-type-of-construction">4.3.1. Syntactic type of construction</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#4-3-2-syntactic-function-of-anchor">4.3.2. Syntactic function of anchor</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#4-3-3-syntactic-structure-of-anchor">4.3.3. Syntactic structure of anchor</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#4-3-4-part-of-speech-of-anchor">4.3.4. Part of speech of anchor</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#4-4-semantic-terms">4.4. Semantic terms</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#4-4-1-semantic-types">4.4.1. Semantic types</a>
+                      </li>
+                    
+                      <li>
+                        <a href="https://constructicon.github.io/russian/instructions-english/#4-4-2-semantic-roles">4.4.2. Semantic roles</a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+  </ul>
+
+  
+    <div class="youtube">
+    <iframe src="https://www.youtube-nocookie.com/embed/gS70MpJPN9o" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<h1 id="instructions">Instructions</h1>
+<h2 id="1-explanation-of-tabs">1. Explanation of tabs</h2>
+<h3 id="browse">Browse</h3>
+<p>This button will bring the user to a list of over 2200 constructions that they
+can scroll through. On this page the user can search for any string that is
+part of the name of a construction and get the construction(s) that match the
+string. For each construction we list the ID Number, the Name and the Illustration, and the
+user clicks to get the whole entry for the construction. Some of the numbers of constructions are not consecutive. This is not an error. This is the result of a long process of collecting constructions and removing duplicates.</p>
+<p>NB! It may take a few seconds for the constructions to load on the website. If you are experiencing delays, you might try opening the webpage on a different browser, since some browsers work faster than others.</p>
+<h3 id="daily-dose">Daily Dose</h3>
+<p>On this page the user can choose their proficiency level from a menu and then
+will receive five constructions chosen at random from their proficiency level.
+Like on Browse, the user sees just the Name and Illustration in this list and
+then clicks to get the full construction entry.</p>
+<h3 id="advanced-search">Advanced Search</h3>
+<p>On this page the user can filter constructions according to various parameters
+that can be combined (multiple filters on the same search).</p>
+<h3 id="instructions-english">Instructions (English)</h3>
+<p>This page contains instructions for users in English.</p>
+<h3 id="instructions-russian">Instructions (Russian)</h3>
+<p>This page contains instructions for users in Russian.</p>
+<h3 id="about">About</h3>
+<p>On this page the user can find information about the project and the team.</p>
+<hr />
+<h2 id="2-abbreviations-and-symbols">2. Abbreviations and symbols</h2>
+<p>Each construction is represented by its name and a short illustration: e.g.
+<strong>найти-Pst NP-Acc!</strong> <em>Нашли развлечение!</em> (‘What a bad way to amuse yourself!
+[lit. found amusement]’). The name of a construction is a short morphosyntactic
+formula that usually includes fixed lexical parts (called the <strong>anchor</strong>) as well as grammatical <strong>slots</strong>
+indicated by means of common abbreviations like NP, VP, etc. When necessary, we
+specify morphological characteristics of the fixed lexeme or a slot, where we
+use abbreviations according the Leipzig Glossing rules.</p>
+<table><thead><tr><th>Gloss</th><th>Explanation</th></tr></thead><tbody>
+<tr><td>1</td><td>First person</td></tr>
+<tr><td>2</td><td>Second person</td></tr>
+<tr><td>3</td><td>Third person</td></tr>
+<tr><td>()</td><td>Optional element</td></tr>
+<tr><td>/</td><td>Alternative elements</td></tr>
+<tr><td>~</td><td>Reduplication (repetition of the same word or morpheme)</td></tr>
+<tr><td>Acc</td><td>Accusative</td></tr>
+<tr><td>Adj</td><td>Adjective</td></tr>
+<tr><td>Adv</td><td>Adverb</td></tr>
+<tr><td>Anim</td><td>Animate</td></tr>
+<tr><td>Bare</td><td>Bare stem of a verb (e.g. <em>прыг, шлеп, скок</em>)</td></tr>
+<tr><td>Cconj</td><td>Coordinating conjunction</td></tr>
+<tr><td>Cl</td><td>Clause</td></tr>
+<tr><td>Cmp</td><td>Comparative</td></tr>
+<tr><td>Cop</td><td>Copula</td></tr>
+<tr><td>Cvb</td><td>Converb (verbal adverb)</td></tr>
+<tr><td>Dat</td><td>Dative</td></tr>
+<tr><td>F</td><td>Feminine</td></tr>
+<tr><td>Fut</td><td>Future</td></tr>
+<tr><td>Gen</td><td>Genitive</td></tr>
+<tr><td>Gen2</td><td>&quot;Second&quot; genitive (Partitive genitive)</td></tr>
+<tr><td>Imp</td><td>Imperative</td></tr>
+<tr><td>Inan</td><td>Inanimate</td></tr>
+<tr><td>Ind</td><td>Indicative</td></tr>
+<tr><td>Inf</td><td>Infinitive</td></tr>
+<tr><td>Ins</td><td>Instrumental</td></tr>
+<tr><td>Ipfv</td><td>Imperfective</td></tr>
+<tr><td>Loc</td><td>Locative</td></tr>
+<tr><td>M</td><td>Masculine</td></tr>
+<tr><td>N</td><td>Neuter</td></tr>
+<tr><td>N-</td><td>Non- (e.g. Nsg=nonsingular, Npst=Nonpast)</td></tr>
+<tr><td>Intj</td><td>Interjection</td></tr>
+<tr><td>Nom</td><td>Nominative</td></tr>
+<tr><td>Noun</td><td>Bare noun (often appears in reduplicative constructions)</td></tr>
+<tr><td>NP</td><td>Noun phrase</td></tr>
+<tr><td>NumColl</td><td>Collective numeral (e.g. <em>двое, трое</em>)</td></tr>
+<tr><td>NumCrd</td><td>Cardinal numeral (e.g. <em>один, два</em>)</td></tr>
+<tr><td>NumOrd</td><td>Ordinal numeral (e.g. <em>первый, второй</em>)</td></tr>
+<tr><td>Pfv</td><td>Perfective</td></tr>
+<tr><td>Pl</td><td>Plural</td></tr>
+<tr><td>PP</td><td>Prepositional phrase</td></tr>
+<tr><td>Pred</td><td>Predicative</td></tr>
+<tr><td>Prep</td><td>Preposition</td></tr>
+<tr><td>PronDem</td><td>Demonstrative pronoun (e.g. <em>это, то</em>)</td></tr>
+<tr><td>PronInt</td><td>Interrogative / relative pronoun (e.g. <em>кто, что, какой, который, каков, чей, когда, где, куда</em>)</td></tr>
+<tr><td>PronPers</td><td>Personal pronoun (e.g. <em>я, мы, ты, вы, он, она, оно, они</em>)</td></tr>
+<tr><td>PronPoss</td><td>Possessive pronoun (e.g. <em>мой, твой, наш, его, ее, их</em>)</td></tr>
+<tr><td>Prs</td><td>Present</td></tr>
+<tr><td>Pst</td><td>Past</td></tr>
+<tr><td>PtcpAct</td><td>Active participle</td></tr>
+<tr><td>PtcpPass</td><td>Passive participle</td></tr>
+<tr><td>Sbjv</td><td>Subjunctive</td></tr>
+<tr><td>Sconj</td><td>Subordinating conjunction</td></tr>
+<tr><td>Sg</td><td>Singular</td></tr>
+<tr><td>Short</td><td>Short form</td></tr>
+<tr><td>Superl</td><td>Superlative</td></tr>
+<tr><td>Verb</td><td>Bare verb (often in constructions with verbal prefixes)</td></tr>
+<tr><td>Voc</td><td>Vocative</td></tr>
+<tr><td>VP</td><td>Verb phrase</td></tr>
+<tr><td>XP</td><td>Any phrasal unit (a slot that can be NP or VP or AP or PP)</td></tr>
+</tbody></table>
+<hr />
+<h2 id="3-explanation-of-conventions">3. Explanation of conventions</h2>
+<p>Each slot and morphological specifications are verified by data from the
+Russian National Corpus, and supplemented by internet searches where data is
+sparse.</p>
+<p>In representing the syntactic structure of constructions, we adopt the
+following strategies.</p>
+<ol>
+<li>
+<p>If a construction contains a noun phrase (NP) that can be used not only in
+the predicative function marked with the nominative case but also in other
+roles (e.g. object, instrument, etc.) encoded with oblique cases, we do not
+specify the case in the construction name: e.g. <strong>NP на нуле</strong> [lit. NP on
+zero], as in <em>Иммунитет на нуле</em> ‘Immunity is at the zero level’ vs.
+<em>Выписали пациента с иммунитетом на нуле</em> ‘They released a patient with
+immunity at the zero level’.</p>
+</li>
+<li>
+<p>If a construction contains a noun phrase (NP) that is only used in the
+predicative function, we indicate its form as the default NP-Nom (= a noun
+phrase with the head noun in the Nominative case), as it appears with the
+present tense copula: e.g. <strong>NP-Nom Cop NP-Nom VP-Inf</strong>  (as in <em>Он мастер
+готовить</em> ‘He is good at cooking [lit. expert cook]’).</p>
+</li>
+<li>
+<p>We assume that the Instrumental case marking of the predicative NP that may
+appear with the past and/or future tense copula is a general rule of
+Russian grammar and this is mentioned in the commentary field on each entry
+and illustrated in examples: e.g. <em>Он был мастером готовить</em> ‘He was good at
+cooking [lit. expert cook]’.</p>
+</li>
+<li>
+<p>We include the copula in the name of a construction only if the copula verb
+can be used in this construction not only in the present tense but also in
+other tense(s): e.g. <strong>NP-Nom Cop не очень</strong>, as in <em>Для стоянки место не
+очень</em> (Past: <em>было не очень</em>; Future: <em>будет не очень</em>).</p>
+</li>
+<li>
+<p>Some constructions contain reduplicated nouns rather than NPs, and we
+represent this accordingly: e.g. <strong>NP-Nom Cop всем Noun-Dat.Pl ~Noun-Nom</strong>
+(as in <em>Всем борщам борщ</em>! ‘The best vegetable soup of all [lit. to all
+soups soup]’).</p>
+</li>
+<li>
+<p>In verb argument constructions that contain a specific verb lexeme (the
+anchor verb) and slots for the verb’s arguments, we specify the subject slot
+even if it has a default nominative case marking: e.g. <strong>NP-Nom знать толк в
+NP-Loc</strong> (as in <em>Он знает толк в настольных играх</em> ‘He is an expert in
+board-games [lit. He knows sense in board-games]’). Normally, the anchor
+verb is given in the infinitive to represent any inflectional form. For
+example, in the construction <strong>NP-Nom знать толк в NP-Loc</strong>, the infinitive
+of the anchor verb <em>знать</em> ‘know’ indicates that this verb can be used in
+this construction in other forms too.</p>
+</li>
+<li>
+<p>If the anchor verb can be used in a construction only in a specific
+grammatical form, the construction name indicates this specific form (or
+forms, if there are very few options): e.g. <strong>с PronPers-Gen хватит/хватило
+(NP-Gen)</strong>, as in <em>С меня хватит</em> ‘I’m fed up [lit. from me enough]’.</p>
+</li>
+<li>
+<p>If the use of the anchor verb in the construction is restricted to a certain
+sub-paradigm, this is indicated accordingly. For example, in the
+construction <strong>найти-Pst NP-Acc!</strong> (as in <em>Нашли развлечение!</em> ‘What a bad
+way to amuse yourself! [lit. found amusement]’), the anchor verb <em>найти</em>
+‘find’ can appear only in the past tense.</p>
+</li>
+<li>
+<p>For constructions that contain a VP, we do not include the subject slot
+NP-Nom in the name of the construction, because the case marking of the
+arguments (including the logical subject) depends on specific verb lexemes:
+compare <strong>вечно VP</strong> in <em>Вечно мне не везет</em> ‘I am always short on luck
+[lit. eternally to me not catch-luck]’ (where the logical subject has an
+experiencer role and is marked with the dative case) vs. <em>Вечно Петр
+опаздывает</em> ‘Peter is always late [lit. eternally Peter is late]’ (where the
+logical subject has the agent role and is encoded with the nominative case).</p>
+</li>
+<li>
+<p>We do not include morphophonological variants of prepositions (like <em>с</em> and
+<em>со</em>) in the name of a construction. Only the default allomorph is
+represented: e.g. <strong>VP с NP-Gen</strong>, as in <em>Она с досады топнула ногой</em>.</p>
+</li>
+</ol>
+<hr />
+<h2 id="4-explanation-of-terms">4. Explanation of terms</h2>
+<h3 id="4-1-stylistic-terms-usage-labels">4.1. Stylistic terms (Usage labels)</h3>
+<p>In the Russian Constructicon, we adopt a set of usage labels to mark those
+constructions that are restricted to certain styles. The usage labels assigned
+to constructions can therefore be used as guidelines for second language
+learners.</p>
+<p>If a construction is stylistically neutral and can be used in both informal and
+formal situations, we do not mark it with a usage label. See the following
+example of a neutral construction: <strong>NP-Nom Cop похожий-Short на NP-Acc
+(NP-Ins/по NP-Dat)</strong> as in <em>Вася похож на папу</em> ‘Vasja looks like his dad’.</p>
+<p>If a construction is stylistically not neutral and therefore is restricted to a
+certain usage domain, we mark it with one of three usage labels: either as
+<strong>Colloquial</strong>, <strong>Formal</strong> or <strong>Obsolete</strong>.</p>
+<p>Types of stylistically restricted constructions:</p>
+<ul>
+<li>
+<p><strong>Colloquial</strong> – The construction has a colloquial flavor and is typically used
+in spoken Russian, particularly in informal situations: e.g. <strong>(вот) то́-то и
+оно́, что Cl/XP</strong> as in <em>То-то и оно, что от меня ничего не зависит</em> ‘That’s
+just it, that nothing depends on my decision.’</p>
+</li>
+<li>
+<p><strong>Formal</strong> – The construction is commonly used in formal situations and written
+texts of formal style: e.g. <strong>вследствие NP-Gen Cl</strong> as in <em>Вследствие такого
+поведения наш договор аннулируется</em> ‘As a result of such a behavior, our
+agreement is abrogated’.</p>
+</li>
+<li>
+<p><strong>Obsolete</strong> – The construction is obsolete and rarely used in Modern Russian:
+e.g. <strong>(со)благоволить-Imp VP-Inf!</strong> as in <em>Благоволите ответить!</em> ‘Favor me
+with an answer!’</p>
+</li>
+</ul>
+<p>In the Russian Constructicon, there are no constructions tagged as Specialized.
+In other words, there are no constructions that can only be used by speakers
+who belong to a certain profession.</p>
+<hr />
+<h3 id="4-2-morphological-terms">4.2. Morphological terms</h3>
+<p>In Advanced Search, it is possible to search for constructions that contain slots and anchors restricted by certain morphological categories. In the search window, the morphological tags are listed in alphabetical order. The tables below offer an overview of these tags as a system. The first table lists the tags for grammatical categories, whereas the second table lists the tags for grammatical classes, that is parts of speech and syntactic units (which also indicate parts of speech). The third table lists the morphological tags that apply to several parts of speech.</p>
+<p>We list the tags as full words and provide corresponding abbreviations that appear in the Advanced Search window in parentheses (). All items listed with bullet points and abbreviations are tags available in Advanced Search (Morphology), others are headings that organise them.</p>
+<table><thead><tr><th>Case</th><th>Gender</th><th>Number</th><th>Person</th></tr></thead><tbody>
+<tr><td>• Nominative (Nom)</td><td>• Masculine (M)</td><td>• Singular (Sg)</td><td>• First person (1)</td></tr>
+<tr><td>• Genitive (Gen)</td><td>• Feminine (F)</td><td>• Plural (Pl)</td><td>• Second person (2)</td></tr>
+<tr><td>• Partitive genitive (Gen2)</td><td>• Neuter (N)</td><td></td><td>• Third person (3)</td></tr>
+<tr><td>• Dative (Dat)</td><td><strong>Tense</strong></td><td><strong>Aspect</strong></td><td><strong>Mood</strong></td></tr>
+<tr><td>• Accusative (Acc)</td><td>• Past (Pst)</td><td>• Perfective (Pfv)</td><td>• Imperative (Imp)</td></tr>
+<tr><td>• Instrumental (Ins)</td><td>• Present (Prs)</td><td>• Imperfective (Ipfv)</td><td>• Subjunctive (Sbjv)</td></tr>
+<tr><td>• Locative (Loc)</td><td>• Future (Fut)</td><td></td><td></td></tr>
+</tbody></table>
+<hr />
+<table><thead><tr><th>Lexical parts of speech</th><th>Lexical parts of speech</th><th>Functional parts of speech</th></tr></thead><tbody>
+<tr><td>• Bare noun (Noun)</td><td>• Adverb (Adv)</td><td>• Interjection (Intj)</td></tr>
+<tr><td>• Adjective (Adj)</td><td>• Predicative (Pred)</td><td>• Preposition (Prep)</td></tr>
+<tr><td>Numeral:</td><td>Verb:</td><td>Conjunction:</td></tr>
+<tr><td>• Collective numeral (NumColl)</td><td>• Auxiliary (Aux)</td><td>• Coordinating conjunction (Cconj)</td></tr>
+<tr><td>• Cardinal numeral (NumCrd)</td><td>• Bare stem (Bare)</td><td>• Subordinating conjunction (Sconj)</td></tr>
+<tr><td>• Ordinal numeral (NumOrd)</td><td>• Copula (Cop)</td><td><strong>Syntactic units</strong></td></tr>
+<tr><td>Pronoun:</td><td>• Converb (Cvb)</td><td>• Clause (Cl)</td></tr>
+<tr><td>• Demonstrative pronoun (PronDem)</td><td>• Infinitive (Inf)</td><td>• Noun phrase (NP)</td></tr>
+<tr><td>•  Interrogative/relative pronoun (PronInt)</td><td>• Active participle (PtcpAct)</td><td>• Prepositional phrase (PP)</td></tr>
+<tr><td>• Personal pronoun (PronPers)</td><td>• Passive participle (PtcpPass)</td><td>• Verb phrase (VP)</td></tr>
+<tr><td>• Possessive pronoun (PronPoss)</td><td>• Bare verb (Verb)</td><td>• Any phrasal unit (XP)</td></tr>
+</tbody></table>
+<hr />
+<table><thead><tr><th>Morphology tags that apply to several parts of speech</th></tr></thead><tbody>
+<tr><td>• Comparative form of adjective or adverb (Cmp)</td></tr>
+<tr><td>• Short form of adjective or participle (Short)</td></tr>
+</tbody></table>
+<hr />
+<h3 id="4-3-syntactic-terms">4.3. Syntactic terms</h3>
+<h3 id="4-3-1-syntactic-type-of-construction">4.3.1. Syntactic type of construction</h3>
+<p>In the Russian Constructicon, we adopt a set of terms to tag syntactic types of
+constructions:</p>
+<ul>
+<li>
+<p><strong>Biclausal Construction</strong> – The construction contains two clauses. This tag is used first of all for annotation of paratactic biclausal structures. Such constructions consist of clauses that are placed one after another without connecting words: e.g. <strong>кто
+бы ни VP-Pst, Cl</strong>, as in <em>Кто бы ни звал её в кино, она не соглашалась</em>; <strong>будучи NP-Ins, Cl</strong>, as in <em>Будучи американцем, он мечтал разбогатеть</em>. Biclausal constructions with connecting words as well as biclausal constructions with matrix predicates are annotated with separate tags.</p>
+</li>
+<li>
+<p><strong>Clause and Modifier Construction</strong> – The construction contains an adverbial that modifies an entire clause: e.g. <strong>как-то/что-то Cl</strong>, as in <em>Что-то мне душно</em>.</p>
+</li>
+<li>
+<p><strong>Clause/XP with parentheticals</strong> – The construction contains a parenthetical, that is an expression with a discourse function that is syntactically not part of a clause: <strong>само собой (разумеется), Cl</strong>, as in <em>Само собой, мы придем на твой концерт</em>.</p>
+</li>
+<li>
+<p><strong>Clause</strong> – The construction constitutes an independent clause: e.g. <strong>NP-Nom (как) давай VP-Inf</strong>, as in <em>Он как давай петь</em>.</p>
+</li>
+<li>
+<p><strong>Connection Construction</strong> – The construction contains a conjunction or a combination of words that performs the function of a conjunction: <strong>Cl благодаря тому, что Cl</strong>, as in <em>Мы успели в аэропорт благодаря тому, что выехали заранее</em>; <strong>сегодня ХP, (а) завтра XP</strong>, as in <em>Зима в Москве суровая. Сегодня здоров, завтра – болен</em>.</p>
+</li>
+<li>
+<p><strong>Copula Construction</strong> – The construction contains a copula: e.g. <strong>NP-Dat Cop пора VP-Inf</strong>, as in <em>Мне пора идти в школу</em>.</p>
+</li>
+<li>
+<p><strong>Discourse &quot;Echo&quot; Construction</strong> – The construction refers to a relevant part of the previous discourse, often quoting a relevant lexeme in the same morphosyntactic form (thus creating an &quot;echo&quot; effect) and adding a comment: e.g. <strong>Скажешь тоже – XP</strong>, as in – <em>Он такой хороший! – Скажешь тоже – &quot;хороший&quot;!</em></p>
+</li>
+<li>
+<p><strong>Head and Modifier Construction</strong> – The construction contains a head and its modifier; the head can be a VP, a NP or any other phrasal unit: e.g. <strong>VP под
+рукой</strong>, as in <em>У меня всегда есть запасной ключ под рукой</em>; <strong>NP на имя NP-Gen</strong>, as in <em>Нужно написать заявление на имя директора</em>.</p>
+</li>
+<li>
+<p><strong>Matrix and Infinitival Complement Construction</strong> - This is a subtype of the Predicate Argument Construction. The construction contains a matrix predicate that takes an infinitival complement without a complementizer. The matrix predicate can be a verb, a noun, an adjective or an adverb: <strong>(NP-Dat) хочется/хотелось VP-Inf</strong>, as in <em>Мне хочется уехать на море</em>; <strong>готовность NP-Gen VP-Inf</strong>, as in <em>Готовность родителей бороться поразила всех</em>; <strong>Рад VP-Inf</strong>, as in <em>Рада вас видеть!</em>; <strong>NP-Nom Cop вправе VP-Inf</strong>, as in <em>Он вправе сам решать, как ему жить</em>. The constructions with matrix predicates that take sentential complements with complementizers (<em>что</em>, <em>как</em>, <em>чтобы</em>, etc.) are tagged as a separate type (see a similar approach in Yoon &amp; Wulff 2016 for Spanish, Arndt 2019 for English, see also Noonan 1985: 53 for discusssion of sentence-like vs. infinitive complements).</p>
+</li>
+<li>
+<p><strong>Matrix and Sentential Complement Construction</strong> – The construction contains a matrix predicate that has a valency for a sentential complement that can be represented by a finite or infinitival subordinate clause attached to the main clause by a complementizer (<em>что</em>, <em>как</em>, <em>чтобы</em>, etc.). It is often the case in our data that the same predicate allows for both types of sentential complements: e.g. <strong>NP-Nom Cop за то, чтобы Cl/VP-Inf</strong>, as in <em>Я за то, чтобы ты у нас жил</em> (sentential complement is a finite clause) vs. <em>Я за то, чтобы поехать в отпуск</em> (sentential complement is a non-finite clause). Other examples: <strong>(все/вся) дело/суть Cop в том, что Cl</strong>, as in <em>Дело в том, что она переживает трудные времена</em>; <strong>знать-Fut, как VP-Ipfv.Inf!</strong>, as in <em>Будет знать, как убегать от родителей!</em>; <strong>NP-Nom и без NP-Gen знать, (что Cl)</strong>, as in <em>Мы и без вас знаем, что делать</em> vs. <em>Мы и без вас знаем, что нужно делать</em>. The constructions with matrix predicates that take infinitival complements without a complementizer are tagged as a separate type (see a similar approach in Yoon &amp; Wulff 2016 for Spanish, Arndt 2019 for English among others, see also Noonan 1985: 53 for discusssion of sentence-like vs. infinitive complements).</p>
+</li>
+<li>
+<p><strong>Morphological Construction</strong> – The construction contains a specific derivational affix: e.g. <strong>Adv-овато/-евато</strong>, as in <em>После переезда в доме
+было пустовато</em>.</p>
+</li>
+<li>
+<p><strong>Predicate Argument Construction</strong> – The construction features the argument structure of a specific predicate or a type of predicate (verb, noun, adjective, participle): e.g. <strong>NP-Nom тянуть с NP-Ins</strong>, as in <em>Зачем тянуть с ответом?</em>; <strong>главный/дежурный по NP-Dat</strong>, as in <em>Главный по кухне</em>; <strong>VP NP-Acc под NP-Acc</strong>, as in <em>Однако после революции они переделали церковь под склад</em>.</p>
+</li>
+</ul>
+<hr />
+<h3 id="4-3-2-syntactic-function-of-anchor">4.3.2. Syntactic function of anchor</h3>
+<p>An anchor is a fixed part of a construction, it can be specific words or it can be the structure of a construction like word order or reduplication.
+In the Russian Constructicon, we adopt a set of terms to tag syntactic functions of anchors:</p>
+<ul>
+<li>
+<p><strong>Argument</strong> – The anchor can have various argument roles: e.g. <strong>деньги на NP-Acc</strong>, as in <em>Он откладывал деньги на покупку машины</em> vs. <em>А кто меня защитит, кто поможет деньгами на хлеб</em>.</p>
+</li>
+<li>
+<p><strong>Coordinator</strong> – The anchor is a coordinating conjunction: e.g. <strong>не прямо XP, а/но XP</strong>, as in <em>Стоял не прямо перед зеркалом, а чуть в стороне</em>.</p>
+</li>
+<li>
+<p><strong>Discourse Particle</strong> – The anchor does not have any syntactic role and typically serves a discourse function, in the broad sense. It can be spelled as a separate word (<em>же, бы, ли</em>) or be hyphenated (<em>-таки, -то</em>): e.g. <strong>Cl, NP же VP</strong>, as in <em>Петя и Таня ушли, Маша же осталась нас поддержать</em>.</p>
+</li>
+<li>
+<p><strong>Government</strong> – The anchor is a noun phrase with specific case marking or a prepositional phrase governed by a verb, adjective, or words of other parts of speech: e.g. <strong>NP-Nom выдавать NP-Acc за NP-Acc</strong>, as in <em>Он выдавал себя за президента</em>; <strong>Adj на NP-Acc (ради NP-Acc)</strong>, as in <em>Способный на подвиг</em>.</p>
+</li>
+<li>
+<p><strong>Matrix Predicate</strong> – The anchor is a matrix predicate, that is a predicate that takes a sentential or infinitival complement: e.g. <strong>(а) кто (это) сказал, что Cl</strong>, as in <em>А кто сказал, что мы не хотим в кино?</em>; <strong>что NP-Dat мешать VP-Inf?</strong>, as in <em>Что ему мешало рассказать всю правду?</em>; <strong>NP-Nom Cop вправе VP-Inf</strong>, as in <em>Он вправе сам решать, как ему жить</em>.</p>
+</li>
+<li>
+<p><strong>Modifier</strong> – The anchor modifies a verbal or a nominal phrase: e.g. <strong>VP изо всех сил</strong>, as in <em>Ваня бежал изо всех сил</em>; <strong>дикий Noun</strong>, as in <em>Я испытал дикий ужас!</em>; <strong>NP в NP-Acc</strong>, as in <em>У него была тетрадь в клетку</em>.</p>
+</li>
+<li>
+<p><strong>Nominal Quantifier</strong> – The anchor is a nominal modifier specifying the number of objects: e.g. <strong>уйма NP-Gen</strong>, as in <em>На все расходы ушла уйма денег</em>.</p>
+</li>
+<li>
+<p><strong>Object</strong> – The anchor has the syntactic role of an object, either direct or indirect: e.g. <strong>NP-Nom делать ошибки/сделать ошибку на NP-Acc</strong>, as in <em>Вася постоянно делает ошибки на правило &quot;жи ши пиши с буквой и&quot;</em>; <strong>Cl, а чего же (другого/ещё) PronPers-Nom ждать-Pst?</strong>, as in <em>Конечно, она ушла, а чего же ты ждала?</em>.</p>
+</li>
+<li>
+<p><strong>Parenthetical</strong> – The anchor is a parenthetical element (word, phrase or clause) that does not serve any syntactic function in the clause it attaches to or is inserted in: e.g. <strong>к слову (сказать), Cl</strong>, as in <em>К слову, он тоже окончил этот факультет</em>.</p>
+</li>
+<li>
+<p><strong>Praedicative Expression</strong> – The anchor functions as a non-verbal predicate with a copula. This function can be performed by words categorized as predicatives in terms of their part of speech (e.g. <em>можно, пора, охота, холодно</em>) as well as by words of other classes used in predicative function with a copula (e.g. <em>студент, в стороне, в лом</em>): e.g. <strong>(NP-Dat) Cop можно VP-Inf</strong>, as in <em>Можно мне открыть окно?</em>; <strong>NP-Nom Cop NP-Dat к лицу</strong>, as in <em>Синее платье было ей к лицу</em>.</p>
+</li>
+<li>
+<p><strong>Subject</strong> – The anchor has the syntactic function of the subject of the clause: e.g. <strong>я бы PronPers-Acc попросил VP-Inf</strong>, as in <em>Я бы вас попросил не ругаться при детях</em>.</p>
+</li>
+<li>
+<p><strong>Subordinator</strong> – The anchor is a subordinating conjunction: e.g. <strong>Cl, благодаря чему Cl</strong>, as in <em>Грудное молоко имеет особую структуру, благодаря чему оно хорошо усваивается</em>.</p>
+</li>
+<li>
+<p><strong>Verb Predicate</strong> – The anchor is the verb predicate of the clause: e.g. <strong>NP-Nom вести в NP-Acc</strong>, as in <em>Дверь вела в комнату</em>.</p>
+</li>
+<li>
+<p><strong>Word-Formation</strong> – The anchor is a derivational affix: e.g. <strong>NP-Nom пере-Verb-ся NP-Ins</strong>, as in <em>Они перекидываются шутками</em>.</p>
+</li>
+</ul>
+<hr />
+<h3 id="4-3-3-syntactic-structure-of-anchor">4.3.3. Syntactic structure of anchor</h3>
+<p>An anchor is a fixed part of a construction, it can be specific words or it can be the structure of a construction like word order or reduplication.
+In the Russian Constructicon, we adopt a set of terms to tag syntactic structures of anchors:</p>
+<ul>
+<li>
+<p><strong>Argument Structure</strong> - The anchor contains both the verb and its argument expressed by a prepositional phrase (or a preposition and specific case marking of the noun phrase): e.g. <strong>NP-Nom знать NP-Acc по NP-Dat</strong>, as in <em>Он знал актера по фильмам</em>; <strong>NP-Nom краснеть за NP-Acc</strong>, as in <em>Мама краснела за оценки сына</em>; <strong>NP-Nom Cop близкий-Short к NP-Gen</strong>, as in <em>Мы как никогда близки к победе</em>.</p>
+</li>
+<li>
+<p><strong>Double Negation</strong> - The construction contains two negation markers that can be separate words (<em>не, ни, нет</em>) or parts of a word (e.g. <em>никогда, ничуть</em>): e.g. <strong>(NP-Dat) нельзя Cop не VP-Inf</strong>, as in <em>Нельзя было не согласиться с ним тогда</em>; <em>никогда не VP</em>*, as in <em>Я никогда не был в Африке</em>.</p>
+</li>
+<li>
+<p><strong>Inversion</strong> - The construction has a fixed word order that deviates from the default one: e.g. <strong>рублей NumCrd</strong>, as in <em>У Маши было рублей сто на книги</em>; <strong>VP NP-Gen на NumCrd-Acc</strong>, as in <em>Они уехали на дачу дня на два</em>.</p>
+</li>
+<li>
+<p><strong>Light Verb Construction</strong> - The construction contains a semantically bleached verb together with a noun (as a direct object or imbedded in a prepositional phrase). The verb typically has a very general meaning (e.g. <em>иметь, носить, брать, делать,</em> etc.) and conveys grammatical meaning (tense, person, etc.), whereas the noun carries the lexical meaning: e.g. <strong>держу пари, (что) Cl</strong>, as in <em>Держу пари, что ты в него влюблена</em>; <strong>NP-Nom носить/иметь Adj-Acc характер-Acc</strong>, as in <em>Большинство звонков носило консультационный характер</em>; <strong>оставить-Imp NP-Acc в покое!</strong>, as in <em>Оставь меня в покое!</em></p>
+</li>
+<li>
+<p><strong>Multiword Conjunction</strong> - The construction contains a conjunction that consists of two or more elements. The conjunction can be continuous or discontinuous depending on whether its parts are separated by other words in a sentence (cf. Шведова и др. 1980. Vol. 1, §1676): e.g. <strong>Cl, в то время как Cl</strong>, as in <em>Способность человека любить ограничена, в то время как потребность в любви – бесконечна</em>; <strong>Cl не только Cl, но и Cl</strong>, as in <em>Он был не только умён, но и добр</em>.</p>
+</li>
+<li>
+<p><strong>Multiword Preposition</strong> - The construction contains a preposition that consists of two or more elements. One of these elements is typically a simplex underived preposition (e.g. <em>согласно с, вдали от, по отношению к,</em> etc. See Шведова et al. 1980. Vol. 1, §1656): e.g. <strong>Cl в зависимости от NP-Gen</strong>, as in <em>Уровень зарплаты определяется в зависимости от опыта работы</em>.</p>
+</li>
+<li>
+<p><strong>Negation</strong> - The construction contains a single negation marker: e.g. <strong>(NP-Dat) не мешало бы/не мешает VP-Pfv.Inf</strong>, as in <em>Нам не мешало бы подкрепиться</em>; <strong>нет чтобы/бы VP-Inf, Cl</strong>, as in <em>Нет чтобы подождать, он ушел без нас!</em>; <strong>NP-Nom (это) Cop ещё ничего</strong>, as in <em>Это ещё ничего</em>.</p>
+</li>
+<li>
+<p><strong>Nominal Pattern</strong> - The construction contains two nominal elements, where one word is the head and the other is dependent. The dependent nominal element always has a specific case marking and can be embedded in a prepositional phrase. Usually, both elements are nouns (the structure NP (Prep) NP), but an element can also be an adjective or a numeral. This structure can apply to both anchors and slots as its elements: e.g. <strong>NP из-под NP-Gen</strong>, as in <em>Коробка из-под торта</em>; <strong>NP в NP-Loc</strong>, as in <em>Боль в животе</em>; <strong>человек NP-Gen</strong>, as in <em>Человек трудной судьбы</em>.</p>
+</li>
+<li>
+<p><strong>Not Applicable</strong> – The construction lacks an anchor or has an anchor word or words that do not constitute any coherent structure: e.g. <strong>будет PronPers-Dat (VP-Ipfv.Inf)!</strong>, as in <em>Будет тебе врать!</em>; <strong>Cl, а NP-Nom (опять) VP-Ipfv.Imp!</strong>, as in <em>Он ушёл домой, а я опять переделывай всё после него</em>; <strong>что же NP-Nom VP?</strong>, as in <em>Что же он сидит?</em></p>
+</li>
+<li>
+<p><strong>Prepositional Phrase</strong> - The construction contains an anchor that represents a prepositional phrase. Both the preposition and the noun are parts of the anchor: e.g. <strong>(NP-Nom) это Cop в первую очередь NP-Nom</strong>, as in <em>Это в первую очередь его заслуга</em>; <strong>во всяком случае, Cl/XP</strong>, as in <em>Во всяком случае, эксперты не исключают такого исхода событий</em>; <strong>NP-Nom Cop на носу</strong>, as in <em>Зима на носу</em>; <strong>VP под шумок</strong>, as in <em>Маша ушла под шумок</em>.</p>
+</li>
+<li>
+<p><strong>Reduplication</strong> - The construction contains repetition of the same morpheme or word (in the same or different morphological form). This structure can apply to both anchors and slots as its elements: e.g. <strong>Noun-Nom есть ~Noun-Nom</strong>, as in <em>Факт есть факт</em>; <strong>NP-Nom по-Verb-по-~Verb и VP</strong>, as in <em>Поспит-поспит и проснётся</em>; <strong>NP-Nom ~NP-Ins, a NP-Nom ~NP-Ins</strong>, as in <em>Дружба дружбой, а служба службой</em>; <strong>вот-вот VP-Fut NP-Nom</strong>, as in <em>Вот-вот прилетит самолет</em>; <strong>всего-навсего NP</strong>, as in <em>Это был всего-навсего старый диван</em>.</p>
+</li>
+<li>
+<p><strong>Serial Verb Construction</strong> - We recognize this type of structure according to the definition given by Haspelmath (2016: 292): &quot;monoclausal construction consisting of multiple independent verbs with no element linking them and with no predicate–argument relation between the verbs&quot;). E.g.: <strong>NP-Nom сидеть VP</strong>, as in <em>Сижу курю</em>; <strong>NP-Nom Verb VP</strong>, as in <em>Он идёт шатается</em>.</p>
+</li>
+<li>
+<p><strong>Subject + Predicate</strong> - This is a subtype of Argument Structure. The anchor contains both the subject and the predicate of the same clause: e.g. <strong>чёрт знает PronInt</strong>, as in <em>Чёрт знает как решать эту задачу!</em>; <strong>что NP-Dat мешать VP-Inf?</strong>, as in <em>Что ему мешало рассказать всю правду?</em></p>
+</li>
+<li>
+<p><strong>Verb + Object</strong> - This is a subtype of Argument Structure. The anchor contains both the verb and its object argument: e.g. <strong>(только) дать-Imp PronPers-Dat повод, Cl</strong>, as in <em>Ему только дай повод, сразу придет просить</em>.</p>
+</li>
+<li>
+<p><strong>Verb Pattern</strong> - The construction contains two verbal elements, where one verb is the head and the other (usually an infinitive) is dependent. This structure can apply to both anchors and slots as its elements. We apply this tag to both matrix verbs with infinitival complements as well as to verbs that go with an infinitive of purpose or converbs that function as adjuncts of the main verb (cf. Тестелец 2001: 180): e.g. <strong>а хотел бы PronPers знать/посмотреть/послушать, Sconj Cl</strong>, as in <em>А хотел бы я знать, почему дети ещё не в постели!</em>; <strong>NP-Nom бросить VP-Inf</strong>, as in <em>Я бросил курить</em>; <strong>NP-Nom за-Verb VP-Pfv.Inf</strong>, as in <em>Я зашел поговорить</em>, <strong>VP не переставая</strong>, as in <em>Телефон звонит не переставая</em>.</p>
+</li>
+</ul>
+<hr />
+<h3 id="4-3-4-part-of-speech-of-anchor">4.3.4. Part of speech of anchor</h3>
+<p>An anchor is a fixed part of a construction, it can be specific words or it can be the structure of a construction like word order or reduplication.
+In the Russian Constructicon, we adopt a set of terms to tag the parts of speech the anchors represent:</p>
+<ul>
+<li>
+<p><strong>Adjective</strong> - A word that signifies a property of an object. An adjective modifies a noun and agrees with the noun (that is, an adjective alters its shape in order to match the grammatical categories of the noun). We apply this tag to both short and full forms of adjectives: e.g.: <strong>NP-Nom Cop готовый-Short VP-Inf</strong>, as in <em>Он готов открыть счёт в банке</em>.</p>
+</li>
+<li>
+<p><strong>Adverb</strong> – An uninflected word that modifies a verb, an adjective, an adverb, or a clause. Adverbs typically express manner, place, time, frequency, degree of intensity, degree of certainty, etc.: e.g. <strong>примерно/приблизительно Prep NumCrd (NP-Gen)</strong>, as in <em>Нужно приготовить супа примерно на восемь порций</em>.</p>
+</li>
+<li>
+<p><strong>Conjunction</strong> – A word that connects words, phrases, or clauses, including complex conjunctions (e.g. <em>несмотря на то, что</em>): e.g. <strong>VP-Inf(-то) ~VP, а/но Cl</strong>, as in <em>Спросить спрошу, но он может не знать</em>.</p>
+</li>
+<li>
+<p><strong>Converb</strong> – A nonfinite verb form that serves to express adverbial subordination (notions like 'when', 'because', 'after' and 'while'). A converb denotes an additional action associated with the main action expressed by the predicate. Converbs are uninflected and function as adjuncts that carry temporal, causal or other meanings: e.g. <strong>Будучи NP-Ins, Cl</strong>, as in <em>Будучи американцем, он мечтал разбогатеть</em>.</p>
+</li>
+<li>
+<p><strong>Interjection</strong> – A word that constitutes an utterance on its own and expresses a spontaneous feeling or reaction of the speaker: e.g. <strong>ах PronPers-Nom NP-Nom!</strong>, as in <em>Ах ты подлец!</em></p>
+</li>
+<li>
+<p><strong>Negation Marker</strong> – <em>не</em> or <em>ни</em>, a word that contains them (e.g. <em>никогда, некто, незачем</em>) and the word <em>нет</em>: e.g. <strong>NP-Dat (не) Verb-ся</strong>, as in <em>Мне не спится</em>.</p>
+</li>
+<li>
+<p><strong>Not Applicable</strong> – The construction does not have anchor words or contains an anchor word that is obsolete and no longer analyzable (e.g. <em>Бог весть</em>): e.g. <strong>VP NP-Ins</strong>, as in <em>Мы готовили обед всей семьей</em>.</p>
+</li>
+<li>
+<p><strong>Noun</strong> – A word that names something, such as a person, place, thing, abstract idea, etc.: e.g. <strong>толпа NP-Gen.Pl</strong>, as in <em>Толпа людей</em>.</p>
+</li>
+<li>
+<p><strong>Numeral</strong> – A word that describes a numerical quantity or the order of objects in the process of counting. The tag is used for cardinal, collective and ordinal numerals: e.g. <strong>VP в двух словах</strong>, as in <em>Он в двух словах рассказал про свою книгу</em>.</p>
+</li>
+<li>
+<p><strong>Onomatopoeia</strong> – A word that phonetically imitates or resembles the sound it describes: e.g. <strong>Cl – и тю-тю/и тютю!</strong>, as in <em>Он забрал машину – и тю-тю! Больше мы не встречались</em>.</p>
+</li>
+<li>
+<p><strong>Participle</strong> – A non-finite verb form that denotes a property associated with an action. Along with the features of a verb (aspect, tense, voice), this form has features of an adjective (gender, number, case) and agrees with a noun: e.g. <strong>видавший виды NP</strong>, as in <em>На видавшем виды велосипеде поехал дальше</em>.</p>
+</li>
+<li>
+<p><strong>Particle</strong> – An uninflected word that lacks referential content (as opposed to nouns, verbs, adjectives, etc.) and mostly serves discourse functions by conveying various modal and pragmatic attitudes of the speaker towards some information in a sentence: e.g. <strong>VP же NP-Nom!</strong>, as in <em>Живут же некоторые!</em></p>
+</li>
+<li>
+<p><strong>Predicative</strong> – A word that denotes a state and acts as a predicate of an impersonal sentence including modals (e.g. <em>можно, надо,</em> etc): e.g. <strong>NP-Dat Cop пора VP-Inf</strong>, as in <em>Мне пора идти в школу.</em></p>
+</li>
+<li>
+<p><strong>Preposition</strong> – A function word (or a group of words) governing, and usually preceding, a noun оr a pronoun to express a relation to another word or element in a sentence. This word usually conveys a meaning in the domain of time, location, direction, etc.: e.g. <strong>NP-Nom Cop Adj-Nom до NP-Gen</strong>, as in <em>Родители религиозные до фанатизма</em>.</p>
+</li>
+<li>
+<p><strong>Pronoun</strong> – A word that substitutes for nominal parts of speech (e.g. the pronouns <em>он</em> и <em>кто</em> substitute for a noun, the pronoun <em>этот</em> substitutes for an adjective, <em>сколько</em> substitutes for a numeral, and <em>когда</em> substitutes for an adverb). We also use this tag for interrogative/relative pronouns and pronominal adverbs like <em>как</em>, <em>когда</em>: e.g. <strong>И вот ещё что (Adv/VP): Cl</strong>, as in <em>И вот ещё что: я к Маше не поеду</em>.</p>
+</li>
+<li>
+<p><strong>Verb</strong> – A word that indicates an action, event or state. We use this tag for finite verb forms and infinitives, whereas participles and converbs are annotated with other tags. We do not use this tag for desemanticized or obsolete forms that are not synchronically analyzable (e.g. <em>весть</em> in <em>Бог весть кто</em>). E.g.: <strong>PronPers-Nom PronPers-Dat дать VP-Inf!</strong>, as in <em>Я тебе дам так себя вести!</em></p>
+</li>
+</ul>
+<hr />
+<h3 id="4-4-semantic-terms">4.4. Semantic terms</h3>
+<h3 id="4-4-1-semantic-types">4.4.1. Semantic types</h3>
+<p>In the Russian Constructicon, we employ a set of terms to tag semantic types of constructions. Explanations of individual semantic tags are available <a href="https://constructicon.github.io/russian/semantic-types/">here</a>.</p>
+<h3 id="4-4-2-semantic-roles">4.4.2. Semantic roles</h3>
+<p>We annotate all definitions of constructions and corpus-based example sentences for semantic roles, focusing primarily on the semantic roles of the slots. In descriptions of constructions, the annotated portions of text are put in square brackets [], and the corresponding semantic role appears in the subscript highlighted with color. In Advanced Search, the user can search for constructions with slots that perform a particular semantic role. Our understanding of semantic roles does not deviate from standard linguistic descriptions (cf. Апресян 1974/1995). Explanations and illustrations of semantic roles will appear here later.</p>
+
+  
+
+  
+
+      </div>
+
+      <div class="more-buffer">
+		
+          <hr>
+
+          <a href="https://diku.no/" target="_blank">
+            <figure class="figure">
+              <img src="https://constructicon.github.io/russian/processed_images/394034c1fc17729500.jpg"
+                   class="figure-img img-fluid rounded" alt="Diku logo">
+            </figure>
+          </a>
+
+          <span style="display:inline-block; width: 25px;"></span>
+
+          <a href="https://uit.no/" target="_blank">
+            <figure class="figure">
+              <img src="https://constructicon.github.io/russian/processed_images/94647126da6373a400.png"
+                   class="figure-img img-fluid rounded" alt="UiT logo">
+            </figure>
+          </a>
+
+          <a href="https://www.hse.ru/en/" target="_blank">
+            <figure class="figure">
+              <img src="https://constructicon.github.io/russian/processed_images/090391a554f2d30000.jpg"
+                   class="figure-img img-fluid rounded" alt="HSE logo">
+            </figure>
+          </a>
+        
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>

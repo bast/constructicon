@@ -1,0 +1,38 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3, h4, h5, h6 {
+  font-size: 16px;
+}
+
+.top-buffer { margin-top: 25px; }
+
+.more-buffer { margin-top: 150px; }
+
+.bottom-buffer { margin-bottom: 25px; }
+
+.highlight { background-color: #8fe6fe; }
+
+[v-cloak] {
+  display: none;
+}
+
+table {
+  white-space: nowrap;
+}
